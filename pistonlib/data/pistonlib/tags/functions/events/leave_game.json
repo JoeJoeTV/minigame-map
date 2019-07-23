@@ -1,0 +1,6 @@
+{
+    "replace": false,
+    "values": [
+        "pistonlib:reset_play_ticks"
+    ]
+}

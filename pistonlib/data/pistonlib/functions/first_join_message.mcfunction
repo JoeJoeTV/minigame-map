@@ -1,0 +1,1 @@
+tellraw @a [{"selector":"@s"},{"text":" joined the game for the first time.","color":"yellow"}]

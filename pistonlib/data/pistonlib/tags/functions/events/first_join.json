@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "#pistonlib:permissions/set_default",
+        "pistonlib:first_join_message"  
+    ]
+}
