@@ -2,7 +2,7 @@
 
 * Multiple Minigames
 * Cosmetics
-* __**[MAYBE]** Multiple Sessions at the same time__
+* ~~**[MAYBE]** Multiple Sessions at the same time~~
 * Lobby for each game
 * Main lobby
 * Players can join a/the session
