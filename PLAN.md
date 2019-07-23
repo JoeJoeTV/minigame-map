@@ -12,7 +12,7 @@
 * Players get Points from Minigames
 * Point Shop for cosmetics
 
-# Namespace devision
+# Namespace division
 
 * **MapLoader:** For Loading Maps from Structure Blocks
 * **Lobbysystem:** For Managing Lobbies, Game Lobbies, Player joining, etc.
