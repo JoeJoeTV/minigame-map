@@ -1,4 +1,4 @@
-#Base plan for designing the system
+# Base plan for designing the system
 
 * Multiple Minigames
 * Cosmetics
@@ -9,4 +9,3 @@
 * **[MAYBE]** Friend system
 * **[MAYBE]** Parties
 * **[MAYBE]** Vote System for Maps, etc.
-* 
