@@ -26,7 +26,6 @@
 # Armorstands/Markers
 
 ## Main
-* Spawn Point
 * Game Join Sign thing
 * Game Lobby Area
 * Game Area(Game Managing Armor Stand)
@@ -49,3 +48,32 @@
 * game_run
 * game_finish
 * setup
+
+## Basic Info
+* Spielleiter
+  * Später vllt:
+    * Voting
+    * Random
+* TP Alle, die gerade in lobby sind in spielelobby
+  * Schild für nachjoinen (wenn spiel nicht angefangen in spielelobby, sonst spectator)
+  * Status des Spiels auf Schild
+
+## Spawn Lobby
+
+# Game Join Sign
+* Sign has different States:
+  * No Game Running, No Gamemaster: "Become Gamemaster"
+  * No Game Running, Gamemaster selected, No Game Selected: "Game is being selected"
+  * Game not started: "Join Game"
+  * Game running: "Spectate Game"
+* trigger commands for above
+
+# Scoreboard Objectives
+* Global
+  * game_running
+  * game_id
+  * game_state
+
+# Player Tags:
+* ingame
+* spectating
