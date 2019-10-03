@@ -9,6 +9,8 @@ Storage
         -state: Number(0: nil; 1: game master selected; 2: game selected, waiting in lobby; 3: ingame; 4: game ended, return to spawn)
         -id: Gamemode ID
         -data: Data object for game to use
+    -minigame_map:player_data
+        -MAYBE: friends list and so on
 Scoreboard Info
     -Boolean: -1: false; 1: true; 0: unassigned
 Player Tags:
