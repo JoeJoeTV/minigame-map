@@ -1,1 +1,0 @@
-execute as @a[scores={plib.play_ticks=1}] run function #pistonlib:events/join_game

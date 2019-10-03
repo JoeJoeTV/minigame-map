@@ -1,0 +1,1 @@
+execute unless score #mmsystem setup matches 1.. run function gamemanager:setup

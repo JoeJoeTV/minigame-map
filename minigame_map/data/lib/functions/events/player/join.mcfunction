@@ -1,0 +1,1 @@
+execute as @a[scores={evt.playtime=1}] run function #lib:events/join

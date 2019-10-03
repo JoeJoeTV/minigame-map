@@ -1,0 +1,170 @@
+Global Scoreboards
+    -Setup
+    -config
+    -player_id
+Storage
+    -minigame_map:config
+    -minigame_map:current_game
+        -running: Boolean
+        -state: Number(0: nil; 1: game master selected; 2: game selected, waiting in lobby; 3: ingame; 4: game ended, return to spawn)
+        -id: Gamemode ID
+        -data: Data object for game to use
+Scoreboard Info
+    -Boolean: -1: false; 1: true; 0: unassigned
+Player Tags:
+    -ingame
+    -spectating
+
+------------------------------------------------------------------------------------------------------------------------
+
+Main
+    -load
+        -Setup Scoreboards and Stuff if not Setup
+        -Loaded Notification
+        -Execute all functions in #load to load all other modules
+    -tick
+
+PlayerManager
+    -load
+        -reset players
+    -neuer Spieler
+        -Spieler joint zum ersten mal
+        -Spieler bekommt ID
+        -Willkommensnachricht wird gesendet
+        -Spieler wird zum Hub teleportiert
+        
+LobbySystem
+    -load
+        -reset sign
+
+GameManager
+    -load
+        -reset map
+        -reset game data
+
+Lib (various functions and stuff to use)
+        
+------------------------------------------------------------------------------------------------------------------------
+
+Areas
+    -spawn area
+    -hub area: At world spawn(0,0)
+    -game area: Weit nach positiv x(10000,0)
+    -lobby area: Weit nach negativ x(-10000,0)
+
+------------------------------------------------------------------------------------------------------------------------
+
+Markers(Armor Stands)
+    -Spawn
+    -Hub
+    -Game Area
+    -lobby area
+
+------------------------------------------------------------------------------------------------------------------------
+
+Chat Commands(/trigger)
+    -help: list all Commands
+    -join: join game
+    -gamemaster: become gamemaster
+    -spectate: specatate game(if running)
+    -credits: see credits
+
+------------------------------------------------------------------------------------------------------------------------
+
+Cosmetics
+    -
+
+------------------------------------------------------------------------------------------------------------------------
+
+File list
+
+    minigame_map
+    |   pack.mcmeta
+    |   
+    \---data
+        +---cosmetics
+        |   \---functions
+        |           load.mcfunction
+        |           setup.mcfunction
+        |           tick.mcfunction
+        |           
+        +---gamemanager
+        |   \---functions
+        |           load.mcfunction
+        |           setup.mcfunction
+        |           tick.mcfunction
+        |           
+        +---games
+        |   \---functions
+        +---lib
+        |   +---functions
+        |   |   |   load.mcfunction
+        |   |   |   setup.mcfunction
+        |   |   |   tp_to_score.mcfunction
+        |   |   |   
+        |   |   +---events
+        |   |   |   \---player
+        |   |   |           death.mcfunction
+        |   |   |           first_join.mcfunction
+        |   |   |           join.mcfunction
+        |   |   |           jump.mcfunction
+        |   |   |           killEntity.mcfunction
+        |   |   |           killPlayer.mcfunction
+        |   |   |           leave.mcfunction
+        |   |   |           sleep.mcfunction
+        |   |   |           talk_to_villager.mcfunction
+        |   |   |           
+        |   |   +---internal
+        |   |   |   |   refresh_invisibility.mcfunction
+        |   |   |   |   
+        |   |   |   \---tp_to_score
+        |   |   |           set_marker.mcfunction
+        |   |   |           tp_to_marker.mcfunction
+        |   |   |           
+        |   |   \---math
+        |   |           calculate_percentage.mcfunction
+        |   |           convert_ticks.mcfunction
+        |   |           
+        |   \---tags
+        |       \---functions
+        |           \---events
+        |               +---entity
+        |               \---player
+        |                       death.json
+        |                       first_join.json
+        |                       join.json
+        |                       jump.json
+        |                       killEntity.json
+        |                       killPlayer.json
+        |                       leave.json
+        |                       sleep.json
+        |                       talk_to_villager.json
+        |                       
+        +---lobbysystem
+        |   \---functions
+        |           load.mcfunction
+        |           reset_lobby.mcfunction
+        |           setup.mcfunction
+        |           tick.mcfunction
+        |           
+        +---main
+        |   +---functions
+        |   |       load.mcfunction
+        |   |       tick.mcfunction
+        |   |       
+        |   \---tags
+        |       \---functions
+        |               load.json
+        |               tick.json
+        |               
+        +---minecraft
+        |   \---tags
+        |       \---functions
+        |               load.json
+        |               tick.json
+        |               
+        \---playermanager
+            \---functions
+                    load.mcfunction
+                    setup.mcfunction
+                    tick.mcfunction

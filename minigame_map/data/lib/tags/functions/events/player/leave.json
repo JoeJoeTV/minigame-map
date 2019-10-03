@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "main:tick"
+        "lib:internal/reset_playtime"
     ]
   }

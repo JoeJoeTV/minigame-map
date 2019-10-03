@@ -1,1 +1,0 @@
-scoreboard players set @s plib.play_ticks 0

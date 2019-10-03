@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "lib:load",
+        "playermanager:load",
+        "lobbysystem:load",
+        "gamemanager:load",
+        "cosmetics:load"
+    ]
+  }
